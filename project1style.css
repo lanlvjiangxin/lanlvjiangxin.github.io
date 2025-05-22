@@ -1,0 +1,124 @@
+*{
+    padding:0;
+    margin:0;
+}
+header{
+    background-color:rgba(3, 19, 90, 0.933);
+    height:110px;
+    width:100%;
+}
+header ul{
+    position:absolute;
+    right:5vw;
+    top:0;
+    line-height:110px;
+}
+h1{
+    color:aliceblue;
+    position:absolute;
+    left:200px;
+    top:0;
+    line-height:70px;
+    font-size:40px;
+}
+h2{
+    color:aliceblue;
+    position:absolute;
+    left:160px;
+    top:0;
+    line-height:160px;
+
+
+}
+header img{
+    width:100px;
+    position:absolute;
+    top:0;
+    line-height:130px;
+    left:50px;
+
+}
+header a{
+    color:moccasin;
+    text-decoration:none;
+}
+header a:hover{
+    text-decoration:underline;
+}
+header li{
+    display:inline;
+    margin-right:4vw;
+}
+.分界线{
+    background-color:royalblue;
+    height:5px;
+}
+.第一部分{
+    background-color: antiquewhite;
+    height:90vh;
+    background-image:url("蓝染花纹暗色.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+
+}
+
+.第一部分 h3{
+    color:beige;
+    font-size:30px;
+    height:100px;
+   
+}
+.第一部分 p{
+    color:aliceblue;
+
+}
+.第二部分{
+    background-color: antiquewhite;
+    height:100vh;
+    display:flex;
+}
+#screen{
+    width:9999px;
+    height:1000px;
+    animation:name 15s infinite;
+
+}
+@keyframes name {
+    0%{}
+    20%{transform:translateX(0)}
+    35%{transform:translateX(-100vw)}
+    40%{transform:translateX(-100vw)}
+    55%{transform:translateX(-200vw)}
+    60%{transform:translateX(-200vw)}
+    75%{transform:translateX(-100vw)}
+    80%{transform:translateX(-100vw)}
+    100%{transform:translateX(0)}
+}
+#screen img{
+    float:left;
+    width:100vw;
+    height:100vh;
+    object-fit:contain;
+}
+#tv{
+    width:100vw;
+    overflow:hidden;
+}
+footer{
+    background-color: black;
+    color:azure;
+    height:40px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+footer p{
+    color:white;
+}
