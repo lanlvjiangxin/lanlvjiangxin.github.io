@@ -1,0 +1,363 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    position:relative;
+    transition: all 0.3s ease; 
+    font-family: 'XiawuWenKai', sans-serif;
+}
+.start{
+
+    height:100vh;
+    width:99vw;
+    z-index:100;
+    position:relative;
+    overflow:hidden;
+}
+.start img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    z-index:100;
+
+}
+.start .daolan{
+    z-index:10;
+    position:relative;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;;
+}
+.start .daolan img{
+    object-fit:contain;
+    height:87%;
+    width:87%;
+}
+header{
+    background-color:rgba(3, 19, 90, 0.9);
+    height:85px;
+    width:100%;
+    position:fixed;
+    z-index:1000;
+    box-shadow: 0px 3px #999;
+}
+header ul{
+    position:absolute;
+    right:5vw;
+    top:0;
+    line-height:85px;
+}
+header .this{
+    border-top: 3px solid white;
+    padding:30px 10px 0;
+}
+header .this a{
+    color:white;
+}
+h1{
+    color:aliceblue;
+    position:absolute;
+    left:200px;
+    top:0;
+    line-height:75px;
+    font-size:40px;
+}
+header .title img{
+    width:85px;
+    position:absolute;
+    top:0;
+    line-height:150px;
+    left:100px;
+}
+header a{
+    text-decoration:none;
+    transition:all 0.3s ease;
+}
+header .notthis a{
+    color:rgba(255, 255, 255, 0.808);
+    padding:30px 10px 0;
+}
+header .notthis a:hover{
+    border-top: 3px solid white;
+    color:white;
+}
+header li{
+    display:inline;
+    margin-right:3vw;
+    font-size: 15px;;
+    font-weight: 500;
+}
+.分界线{
+    background-color:royalblue;
+    height:5px;
+    margin-top:85px;
+}
+.image-slider{
+    width:100vw;
+    height:90vh;
+    position:fixed;
+    transition:all linear 0.8s;
+    /* background-color: aquamarine; */
+    display:flex;
+    background-color:bisque;
+    top:85px;
+
+}
+.image-slider img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position:absolute;
+}
+.image-slider .slide{
+    opacity:0;
+}
+.image-slider .slide.current{
+    opacity:1;
+}
+#prev,
+#next {
+      position: absolute;
+      z-index: 150;
+      width: 60px;
+      height: 60px;
+      font-size: 36px;
+      color: white;
+      text-align: center;
+      line-height: 60px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      top: calc(50% - 24px);
+      transition: all 0.2s;
+      cursor: pointer;
+      font-weight: bold;
+    }
+#next{
+    right:50px;
+
+}
+#prev{
+    left:30px;
+}
+#prev:hover,
+#next:hover{
+    background-color: rgba(255,255,255,0.6);
+    color:black;
+
+}
+main{
+    position:relative;
+    top:900px;
+    z-index:0;
+    margin-top:120px;
+}
+.第一部分{
+    background-color: antiquewhite;
+    height:1200px;
+    background-image:url("纺车2.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    /* display:flex;
+    flex-direction: column;
+    align-items:center; */
+    /* justify-content: center; */
+    position:relative;
+    line-height:50px;
+}
+.第一部分 h3{
+    color:rgb(9, 154, 245);
+    font-size:60px;
+    height:100px;
+    margin-top:110px;
+    position:absolute;
+    top:110px;
+    left:120px;
+    border-left:10px solid #fff;
+    padding:0px 0px 15px 15px;
+    transition: all 0.5s ease; 
+    opacity:0;
+}
+.第一部分 p{
+    color:aliceblue;
+    position:absolute;
+    top:440px;
+    left:200px;
+    font-size:25px;
+    padding-right:600px;
+    transition: all 0.5s ease; 
+    opacity:0;
+}
+.第一部分 img{
+    height:800px;
+    float:right;
+    position:absolute;
+    top:200px;
+    right:70px;
+    border:5px solid rgb(62, 97, 171,0.6);
+    border-radius: 10px;
+    transition: all 0.8s ease-out; 
+    opacity:0;
+}
+.第一部分 a{
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 30px;
+    padding:10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    position:absolute;
+    top:800px;
+    left:200px;
+    transition: 0.5s ease;
+}
+.第一部分 a:hover{
+    background-color: rgb(246, 246, 247);
+    color:rgb(29, 5, 249);
+}
+.news{
+    background-color: bisque;
+    height:120px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+}
+.news h3{
+    font-size: 40px;
+    transition: all 1s ease;
+}
+.news h4{
+    font-size: 20px;
+    transition: all 1s ease;
+}
+.第二部分{
+    width:100%;
+    background-color: antiquewhite;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center;
+    background-image: url(蓝染花纹暗色.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.第二部分 div{
+    padding:20px;
+    width:300px;
+    height:300px;
+    margin:50px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+.第二部分 div:hover{
+    cursor: pointer;
+    background-color: rgb(17, 32, 168);
+    box-shadow:0 0 10px #fff;
+    background-image: url(#);
+}
+.第二部分 div:hover > h4{
+    color:rgb(248, 247, 247);
+    transform: translateY(-100px);
+    font-size: 40px;;
+}
+.第二部分 div:hover > .word{
+    color:rgb(248, 246, 246);
+    transform: translateY(-250px);
+    opacity: 1;
+}
+.第二部分 div:hover > .date{
+    color:rgb(248, 246, 246);
+}
+.第二部分 div h4{
+    font-size: 30px;;
+    border-bottom: 2px solid #999;
+    position: absolute;
+    top:110px;
+    color:aqua;
+    transition: 0.5s ease;
+}
+.第二部分 .date{
+    position:absolute;
+    right:10px;
+    bottom: 10px;
+    font-size: 50px;
+    color: rgb(153, 153, 153);
+    transition:0.5 ease;
+}
+.第二部分 .word{
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    top:400px;
+    opacity: 0;
+    transition: 1s ease;
+}
+.第二部分 .newsblock0{
+    
+}
+.第二部分 .newsblock1{
+    background-image: url(微信图片_20250729214208.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.第二部分 .newsblock2{
+    background-image: url(微信图片_20250729214111.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.第二部分 .newsblock3{
+    background-image: url(转发1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+.第二部分 .newsblock4{
+    background-image: url(馆长.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.第二部分 .newsblock5{
+    background-image: url(图片4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+footer{
+    background-color: black;
+    color:azure;
+    height:200px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position:relative;
+    top:900px;
+    flex-wrap: wrap;
+}
+footer img{
+    width:120px;
+    margin:25px;
+}
+footer p{
+    color:white;
+    font-size: 30px;
+}
+footer .版权{
+    width:100%;
+    font-size: 15px;
+    padding-left: 45vw;
+}

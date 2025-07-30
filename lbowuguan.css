@@ -1,0 +1,61 @@
+*{
+    padding:0;
+    margin:0;
+}
+.第一部分{
+    background-color: bisque;
+    display: flex;
+}
+h1{
+    border: 2px solid black ;
+    border-radius: 10px;;
+    margin: 10px;
+    padding:5px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.第二部分{
+    width:100%;
+    background-color: bisque;
+}
+.图片展示表{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    height:200vh;
+    position:relative;
+}
+.图片展示表 .imagecolumn{
+    display:grid;
+    grid-template-columns: repeat(4,20vw);
+    gap:2em;
+    background-color: rgb(249, 248, 246);
+    padding:30px;
+    overflow: hidden;
+}
+.图片展示表 section:nth-child(1),
+.图片展示表 section:nth-child(3){
+    animation: scroller linear forwards;
+    animation-timeline: scroll(root);
+    translate: 0% calc(0 + 100vh);
+    flex-direction: column-reverse;
+}
+.图片展示表 img{
+    width:100%;
+    margin:10px 0;
+    box-shadow: 0 0 10px #0f0e0e;
+    border-radius:10px;
+    transition:0.5s;
+}
+.图片展示表 img:hover{
+    box-shadow: 15px;
+    transform:scale(1.1);
+}
+
+@keyframes scroller{
+    to{
+        translate: 0% calc(-10% - 100vh);
+    }
+}

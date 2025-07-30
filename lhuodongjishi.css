@@ -1,0 +1,167 @@
+*{
+    padding:0;
+    margin:0;
+}
+header{
+    background-color:rgba(3, 19, 90, 0.9);
+    height:85px;
+    width:100%;
+    position:fixed;
+    z-index:1000;
+    box-shadow: 0px 3px #999;
+}
+header ul{
+    position:absolute;
+    right:5vw;
+    top:0;
+    line-height:85px;
+}
+header .this{
+    border-top: 3px solid white;
+    padding:30px 10px 0;
+}
+header .this a{
+    color:white;
+}
+h1{
+    color:aliceblue;
+    position:absolute;
+    left:200px;
+    top:0;
+    line-height:75px;
+    font-size:40px;
+}
+header .title img{
+    width:85px;
+    position:absolute;
+    top:0;
+    line-height:150px;
+    left:100px;
+}
+header a{
+    text-decoration:none;
+    transition:all 0.3s ease;
+}
+header .notthis a{
+    color:rgba(255, 255, 255, 0.808);
+    padding:30px 10px 0;
+}
+header .notthis a:hover{
+    border-top: 3px solid white;
+    color:white;
+}
+header li{
+    display:inline;
+    margin-right:3vw;
+    font-size: 15px;;
+    font-weight: 500;
+}
+.分界线{
+    background-color:royalblue;
+    height:5px;
+    margin-top:85px;
+}
+main{
+    overflow: hidden;
+    background-color:bisque;
+}
+main .name{
+    margin-top:90px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    font-size:15px;
+}
+main .name2{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: deepskyblue;
+}
+main p{
+    width:150px;
+    margin:0 auto;
+    padding:0 auto;
+    text-align: center;
+}
+main .content{
+    display:flex;
+    align-content: center;
+}
+main .content div{
+    display:flex;
+    width:50vw;
+    justify-content: center;
+    height:85vh;
+    border-left:2px solid white;
+    border-right: 2px solid white;
+}
+main a{
+    display:block;
+    text-decoration: none;
+    color:rgb(255, 0, 0);
+    font-size:20px;
+}
+main .museum{
+    background-image: url(博物馆.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter:blur(2px) brightness(0.7) grayscale(100%);
+    transition:all 0.8s ease;
+}
+main .museum:hover{
+    background-size: 210%;
+    filter:blur(0) brightness(0.7) grayscale(0) contrast(150%);
+    box-shadow: 0 0 5px white;
+}
+main .caodyehouse{
+    background-image: url(微信图片_20250729222903.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter:blur(2px) brightness(0.7) grayscale(100%);
+    transition:all 0.8s ease;
+}
+main .caodyehouse:hover{
+    /* background-size: 350%; */
+    background-size: 250%;
+    filter:blur(0) brightness(0.7) grayscale(0) contrast(150%);
+    box-shadow: 0 0 5px white;
+}
+main .wangdyehouse{
+    background-image: url(微信图片_20250729214042.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter:blur(2px) brightness(0.7) grayscale(100%);
+    transition:all 0.8s ease;
+}
+main .wangdyehouse:hover{
+    /* background-size: 220%; */
+    background-size: 150%;
+    filter:blur(0) brightness(0.7) grayscale(0) contrast(150%);
+    box-shadow: 0 0 5px white;
+}
+footer{
+    background-color: black;
+    color:azure;
+    height:200px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position:relative;
+    flex-wrap: wrap;
+}
+footer img{
+    width:120px;
+    margin:25px;
+}
+footer p{
+    color:white;
+    font-size: 30px;
+}
+footer .版权{
+    width:100%;
+    font-size: 15px;
+    padding-left: 45vw;
+}
